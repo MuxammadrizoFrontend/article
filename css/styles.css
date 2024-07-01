@@ -15,6 +15,7 @@ html {
 }
 
 body {
+	display: flex;
 	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -22,6 +23,10 @@ body {
 	letter-spacing: 2px;
 	color: #222;
 	height: 100%;
+}
+
+.article {
+	display: flex;
 }
 
 .article-left {
@@ -77,4 +82,12 @@ article-left-info {
 	background-position: center center;
 	display: inline-block;
 	content: '';
+}
+
+.article-right {
+	max-width: 492px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 54px;
 }
