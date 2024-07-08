@@ -27,6 +27,7 @@ body {
 
 .article {
 	display: flex;
+	width: 100vw;
 }
 
 .article-left {
@@ -43,7 +44,7 @@ body {
 	color: #fff;
 }
 
-article-left-info {
+.article-left-info {
 	max-width: 285px;
 	width: 100%;
 }
@@ -56,6 +57,7 @@ article-left-info {
 }
 
 .article-left-btn {
+	display: flex;
 	border: none;
 	padding: 12px 24px;
 	background-color: #1e90ff;
@@ -68,26 +70,92 @@ article-left-info {
 }
 
 .article-left-btn::before {
+	display: inline-block;
 	background-image: url(../img/star.svg);
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background-repeat: no-repeat;
-	background-size: 20px 20px;
+	background-image: cover;
+	background-position: center center;
 	width: 20px;
 	height: 20px;
-	padding: 12px 24px;
-	border: none;
-	text-transform: uppercase;
-	background-position: center center;
-	display: inline-block;
+	margin-right: 12px;
 	content: '';
 }
 
 .article-right {
-	max-width: 492px;
-	width: 100%;
+	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 54px;
+}
+
+.article-right-title {
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-size: 24px;
+}
+
+.article-right-line {
+	width: 100%;
+	background-color: #999;
+	border: none;
+	height: 1px;
+	margin-bottom: 24px;
+}
+
+.article-right-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.article-right-item {
+	display: flex;
+	align-items: center;
+}
+
+.article-right-item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.article-right-img {
+	width: 160px;
+	height: 90px;
+	object-fit: cover;
+	margin-right: 16px;
+}
+
+.article-right-info {
+	max-width: 307px;
+	width: 100%;
+}
+
+.article-right-info-title {
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 4px;
+	width: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.article--info-virightew {
+	display: flex;
+}
+
+.article-right-info-text {
+	display: inline-block;
+	color: #888;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.article-right-info-text:not(:last-child) {
+	margin-right: 24px;
+}
+
+.article-right-info-text ::before {
+	background-image: url()
+	content: ;
 }
